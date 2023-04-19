@@ -1,15 +1,11 @@
-
+import { useState } from "react";
 import { ToastContainer } from "react-toastify";
 import AppRoutes from "./Routes";
-import Reset from "./styles/reset";
-import GlobalStyled from "./styles/global";
 
 function App() {
 
   return (
     <>
-      <Reset />
-      <GlobalStyled />
       <AppRoutes />
 
       <ToastContainer

@@ -9,7 +9,7 @@ import { UserContext } from "../../../providers/UserContext";
 const FormLogin = () => {
   const schema = yup
     .object({
-      email: yup.string().required("Campo email é obrigatório."),
+      email: yup.string().required("Campo e-mail é obrigatório."),
       password: yup.string().required("Campo senha é obrigatório"),
     })
     .required();
@@ -31,7 +31,7 @@ const FormLogin = () => {
           type="email"
           id="email"
           {...register("email")}
-          placeholder="exemplo@kenzie.com.br"
+          placeholder="samuel@kenzie.com.br"
         />
         <span>{errors.email?.message}</span>
       </fieldset>
